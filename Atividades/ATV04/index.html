@@ -1,72 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content = "width=device-width, inital-scale=1.0">
-		<title> Título da Página</title>
-	</head>
-	<body>
-		<header>
-			<h1>Guia do Front-end</h1>
-			<p>Fundamentos de HTML, CSS e desenvolvimento We.</p>
-			<figure>
-				<img src="img/01.jpg" alt="estudando no computador" />
-				<figcaption>O Front-end é responsável pela interface com a qual o usuário interage. </figcaption>
-			</figure>
-			</header>
-			<nav>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title> Título da Página</title>
+</head>
+
+<body>
+	<header>
+		<h1>Guia do Front-end</h1>
+		<p>Fundamentos de HTML, CSS e desenvolvimento We.</p>
+		<figure>
+			<img src="img/01.jpg" alt="estudando no computador" />
+			<figcaption>O Front-end é responsável pela interface com a qual o usuário interage. </figcaption>
+		</figure>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Início</a></li>
+				<li><a href="#html">HTML</a></li>
+				<li><a href="semantica">Semântica</a></li>
+				<li><a href="texto">Texto</a></li>
+				<li><a href="codigo">Código</a></li>
+				<li><a href="glossario">Glossário</a></li>
+				<li><a href="tecnologia">Tecnologia</a></li>
+				<li><a href="contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr />
+	<main>
+		<section>
+			<h2 id="inicio">O que é Front-end?</h2>
+			<p>O desenvolvimento Front-end está relacionado à parte de uma aplicação que o usuário visualiza e utiliza
+				diariamente.</p>
+			<p>Para desenvolver uma aplicação Web é importante compreender <em>estrutura, apresentação e comportamento</em>.</p>
+			<p><mark>HTML não é responsável por criar o design da página.</mark> Sua principal função é estruturar o conteúdo.</p>
+			<p>O desenvolvimento Front-end utiliza diferentes tecnologias que trabalham em conjunto.</p>
+		</section>
+		<hr />
+		<section>
+			<h2>As três pricnipais tecnologias</h2>
+			<ol type="1">
+				<li><abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr> - estrutura do contéudo.</li>
+				<li><abbr title="Folha de Estilo em Cascata">CSS</abbr> - apresentação visual.</li>
+				<li><abbr title="JavaScript">JS</abbr> - comportamento e interatividade.</li>
+			</ol>
+			<p>HTML define a estrutura, CSS trabalha a apresentação e JavaScript permite adicionar comportamentos.
+		</section>
+		<hr />
+		<section>
+			<h2>HTML - Estrutura da Web</h2>
+			<h3>O que é HTML?</h3>
+			<p>HTML é uma linguagem de marcação utilizada para estruturar documentos Web.</p>
+			<p>Um documento HTML é composto por elementos. Por exemplo, o elemento p representa um parágafo.</p>
+			<p>Já o elemento a pode ser utilizado para criar um link.</p>
+			<article>
+				<h4>Elementos HTML</h4>
+				<p>Alguns elementos utilizados para estruturar uma página são:</p>
 				<ul>
-					<li><a href= "#inicio">Início<a/></li>
-					<li><a href= "#html">HTML</a></li>
-					<li><a href= "semantica">Semântica</a></li>
-					<li><a href= "texto">Texto</a></li>
-					<li><a href= "codigo">Código</a></li>
-					<li><a href= "glossario">Glossário</a></li>
-					<li><a href= "tecnologia">Tecnologia</a></li>
-					<li><a href= "contato">Contato</a></li>
+					<li><code>h1</code> - título principal.</li>
+					<li><code>p</code> - parágrafo.</li>
+					<li><code>a</code> - link.</li>
+					<li><code>img</code> - imagem.</li>
+					<li><code>ul</code> - lista não ordenada.</li>
 				</ul>
-			</nav>
+			</article>
+			<article>
+				<h4>Atributos HTML</h4>
+				<p>Os atributos fornecem informações adicionais sobre os elementos HTML.</p>
+				<dl>
+					<dt><code>href</code></dt>
+					<dd>Define a origem de um link.</dd>
+					<dt>src</dt>
+					<dd>Define a origem de um recurso.</dd>
+					<dt>alt</dt>
+					<dd>Fornece uma descrição alternativa para a imagem.</dd>
+					<dt>title</dt>
+					<dd>Fornece uma informação complementar.</dd>
+					<dt>lang</dt>
+					<dd>Indica o idioma prioncipal do documento.</dd>
+				</dl>
+			</article>
+		</section>
+		<hr />
+		<section>
+			<h2>HTML Semântico</h2>
+			<p>HTML semântico significa utilizar elementos que representam o significado do conteúdo.</p>
+			<p> Em vez de utilizar apenas div para toda a página, podemos utilizar elementos específicos para
+				representar cada parte.</p>
+			<dl>
+				<dt><code>header</code></dt>
+				<dd>Representa o cabeçalho.</dd>
+				<dt><code>nav</code></dt>
+				<dd>Representa uma área de navegação.</dd>
+				<dt><code>main</code></dt>
+				<dd>Representa o conteúdo principal.</dd>
+				<dt><code>section</code></dt>
+				<dd>Representa uma seção do conteúdo.</dd>
+				<dt><code>article</code>
+				</dt><dd>Representa conteúdo independente.</dd>
+				<dt><code>aside</code></dt>
+				<dd>Representa conteúdo complementar.</dd>
+				<dt><code>footer</code></dt>
+				<dd>Representa o rodapé.</dd>
+			</dl>
+			<p>A tag <code>div</code> continua sendo útil para agrupamentos genéricos.</p>
+			<p>Este conteúdo destá dentro de uma <code>div</code> porque não possui uma função semântica específica.</p>
 			<hr />
-			<main>
-				<section>
-					<h2 id="inicio">O que é Front-end?</h2> 
-					<p> O desenvolvimento Front-end está relacionado à parte de uma aplicação que o usuário visualiza e utiliza diariamente.</p>
-					<p>Para desenvolver uma aplicação Web é importante compreender <em>estrutura, apresentação e comportamento</em>.</p>
-					<p><mark>HTML não é responsável por criar o design da página.</mark> Sua principal função é estruturar o conteúdo.</p>
-					<p>O desenvolvimento Front-end utiliza diferentes tecnologias que trabalham em conjunto.</p>
-				</section>
+		</section>
+		<section>
+			<h2>Semântica Textual Inline</h2>
+			<p>O HTML também possui elementos utilizados para representar o significado de pequenos trechos de tesxto.
+			</p>
+			<h3>Importância e enfâse</h3>
+			<p>A <code>tag strong</code> indica <strong>grande importância.</strong>
+			<p>A <code>tag</code> em pode indicar <em>ênfase</em> em determinada informação.</p>
+			<p> A <code>tag mark</code> pode destacar <mark>uma informação importante</mark>.
+			<p> A <code>tag small</code> pode apresentar uma observação. <small>Esta é uma informação complementar</small>.
+			<h3>Abreviações</h3>
+			<p>A <abbr title="Interface de Progração de Aplicações">API</abbr> permite a comunicação entre diferentes
+				sistemas.</p>
+			<h3>Referências</h3>
+			<p>Uma fonte bastante conhecida para consulta é a <em>MDN Web Docs.</em>
+			</p>Uma frase bastante conhecida entre programadores é:"primeiro aprenda a pensar, depois aprenda a programar."</p>
+			<p>O conhecimento dos fundamentos é importante para compreender tecnologias mais complexas.
+			<h3>Datas</h3>
+			<p>Este guia atualizado em 8 de outubro de 2026.</p>
+			<p>A próxima atualização ocorrerá em 15 de outubro de 2026.</p>
 			<hr />
-				<section>
-					<h2>As três pricnipais tecnologias</h2>
-					<ol type = "1">
-						<li><abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr> - estrutura do contéudo.</li>
-						<li><abbr title="Folha de Estilo em Cascata">CSS</abbr> - apresentação visual.</li>
-						<li><abbr title="JavaScript">JS</abbr> - comportamento e interatividade.</li>
-					</ol>
-					<p>HTML define a estrutura, CSS trabalha a apresentação e JavaScript permite adicionar comportamentos.
-				</section>
-			<hr/>
-				<section>
-					<h2>HTML - Estrutura da Web</h2>
-					<h3>O que é HTML?</h3>
-					<p>HTML é uma linguagem de marcação utilizada para estruturar documentos Web.</p>
-					<p>Um documento HTML é composto por elementos. Por exemplo, o elemento p representa um parágafo.</p>
-					<p>Já o elemento a pode ser utilizado para criar um link.</p>
-					<h4>Elementos HTML</h4>
-					<p>Alguns elementos utilizados para estruturar uma página são:</p>
-					<ul>
-						<li>h1 - título principal.</li>
-						<li>p - paarágrafo.</li>
-						<li>a - link.</li>
-						<li>img - imagem.</li>
-						<li>ul - lista não ordenada.</li>
-					</ul>
-					<h4>Atributos HTML<h4>
-					<p>Os atributos fornecem informações adicionais sobre os elementos HTML.</p>
-				
-				
-				
-				
-			
-				
-			
+			<h2>Código</h2>
+			<pre>
+	<code>&lt;h1&gt;</code>Olá Mundo!&lt;/h1&gt;
+			</pre>
+			p
