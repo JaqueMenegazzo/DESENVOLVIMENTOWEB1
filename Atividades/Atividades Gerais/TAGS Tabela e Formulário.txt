@@ -1,0 +1,61 @@
+
+Table-tabela
+
+caption- título ou legenda de uma tabela
+
+thead- cabeçalho da tabela -identificação de cabeçalho das células
+
+t-body - corpo da tabela
+
+th-célula da coluna
+
+tr é uma linha tabela e td é uma célula da tabela
+
+t-foot rodapé da tabela
+
+folter -rodapé da página
+
+col- coluna
+
+colgroup - grupo de células
+
+scope
+
+colspan- quantas células vai ocupar dentro da linha-tr
+
+th socpe atribui significado
+
+border= borda da tabela- tamanho do traço da tabela
+
+
+Formulários
+
+Form- Formulário - 
+
+Imput- campo de entrada de dados- diversos valores- textual, numérico
+
+Label- Rótulo -Legenda do campo
+
+Textarea-descrição maior, uma mensagem, TEXTO LONGO
+
+Button- click- executar uma ação
+
+select-  monta uma lista
+
+option-opções dentro do lista
+
+optgroup- grupo das opções
+
+fieldeset- agrupa campo selecionados dentro do formulário
+
+legend- título
+
+datalist- sugestões
+
+output - resultado
+
+meter- medidor
+ 
+progress-progresso
+
+
