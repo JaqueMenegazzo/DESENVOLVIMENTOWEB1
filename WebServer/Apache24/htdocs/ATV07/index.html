@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Título da Página</title>
+</head>
+
+<body>
+	<header>
+		<h1>Central de Informações e Suporte Técnico</h1>
+	</header>
+	<p>Bem-vindo ao portal de atendimento do setor de Tecnologia da Informação.</p>
+	<hr/ >
+	<section>
+		<details>
+			<summary>Como recuperar minha senha?</summary>
+			<p>Entre em contato com o setor de TI para solicitar a redefinição da senha.</p>
+		</details>
+		<details>
+			<summary>O que fazer quando o computador está lento?</summary>
+			<p>Entre no menu iniciar e pesquise por Limpeza de Disco (Disk Cleanup)</p>
+		</details>	
+		<details>
+			<summary>Como conectar à rede Wi-Fi da empresa?</summary>
+			<p>Identifique junto ao setor de TI da empresa o nome da rede destinadas aos funcionários</p>
+		</details>	
+		<details>
+			<summary>Como solicitar a instalação de um programa?</summary>
+			<p>Abra um chamado para o setor de TI e solicite a instalação com o nome exato do software desejado</p>
+		</details>
+		<details>
+			<summary>Como identificar um e-mail suspeito?</summary>
+			<p>Observe os seguintes sinais: Golpistas costumam usar domínios gratuitos para endereço de e-mail, links e anexos suspeitos, senso de urgência e pânico, saudações genéricas e erros de português.</p>
+		</details>
+		<dialog open id="meuDialog">
+			<h2>Comunicado do setor de TI</h2>
+			<p>Reinicie os computadores. Uma nova atualização do sistema de vendas foi instalada.</p>
+			<button
+			type="button"
+			onclick="document.getElementById('meuDialog').close()">
+			Fechar aviso
+			</button>
+		</dialog>
