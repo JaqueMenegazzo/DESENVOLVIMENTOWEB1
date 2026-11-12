@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Título da Página</title>
+</head>
+
+<body>
+	<header>
+		<h1>Portal de Gestão de Hardware</h1>
+		<p>Sistema de controle de equipamentos, patrimônio e manutenção do setor de Tecnologia da Informação.</p>
+		<hr/>
+		<section>
+		<h2> 1.Inventário de equipamentos.</h2>
+		<p>Consulte os equipamentos disponíveis no estoque, suas quantidades e seus respectivos valores.</p>
+		<table border="1">
+			<caption>Inventário de Hardware da Empresa</caption>
+			<thead>
+				<tr>
+					<th scope="col">Patrimônio</th>
+					<th scope="col">Equipamento</th>
+					<th scope="col">Categoria</th>
+					<th scope="col">Quantidade</th>
+					<th scope="col">Valor unitário</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>EQ001</td>
+					<td>Notebook Dell</td>
+					<td>Computador</td>
+					<td>5</td>
+					<td>R$ 3.000,00</td>
+				</tr>
+				<tr>
+					<td>EQ002</td>
+					<td>Monitor Full IID</td>
+					<td>Periférico</td>
+					<td>8</td>
+					<td>R$ 800,00</td>
+				</tr>
+				<tr>
+					<td>EQ003</td>
+					<td>Teclado USB</td>
+					<td>Periférico</td>
+					<td>12</td>
+					<td>R$ 100,00</td>
+				</tr>
+				<tr>
+					<td>EQ004</td>
+					<td>Desktop corporativo</td>
+					<td>Computador</td>
+					<td>3</td>
+					<td>R$ 4.500,00</td>
+				</tr>
+				<tr>
+					<td>EQ005</td>
+					<td>Impressora de rede</td>
+					<td>Impressão</td>
+					<td>2</td>
+					<td>R$ 1.200,00</td>
+				</tr>
+			<tbody>
+			<tfoot>
+				<tr>
+					<th scope="row" colspan="3">Total de equipamentos</th>
+					<td>30</td>
+					<td>---</td>
+				</tr>
+				<tr>
+					<th scope="row" colspan="4">Valor total estimado do inventário</th>
+					<td>R$ 38.500,00</td>
+				</tr>
+			</tfoot>
+		</table>
+		<hr/>
+		</section>
+		<section>
+			<h2>2. Cadastro de equipamentos</h2>
+			<p>Preencha os dados abaixo para registrar um novo equipamento no inventário.</p>
+			<form>
+				<fieldset>
+					<legend>Identificação de equipamento</legend>
+					<label>Nome do equipamento:</label>
+					<input type="text" placeholder="Digite o nome" /><br />
+					<label>Código de patrimônio:</label>
+					<input type="text" placeholder="Ex.:EQ006" /><br />
+					<label>Data de aquisição:</label>
+					<input type="date" placeholder="Digite o nome" /><br />
+					<label>Categoria:</label>
+					<select id="categoria">
+						<option>Selecione uma categoria</option>
+						<option>cat 01</option>
+						<option>cat 02</option>
+						<option>cat 03</option>
+						<option>cat 04</option>
+						<option>cat 05</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Responsável e condições</legend>
+					<label>E-mail do responsável:</label>
+					<input type="text" placeholder="nome@empresa.com" /><br />
+					<label for="quantidade">Quantidade:</label>
+					<input type="number" id="quantidade" name="quantidade" value="1" min="1" max="100" step="1"><br />
+					<label for="valor-unitario">Valor Unitário (R$):</label>
+					<input
+						type="number"
+						id="valo-unitario"
+						name="valor_unitario"
+						min="0"
+						step="0.01"
+						value="0.00"
+					><br />
+					<label>Estado de Conservação:</label>
+					<select id="estado-de-conservacao">
+						<option>Selecione o estado</option>
+						<option>AM 01</option>
+						<option>BA 02</option>
+						<option>SP 03</option>
+						<option>SC 04</option>
+						<option>PR 05</option>
+					</select><br/>
+					<label>Descrição e observações:</label><br/>
+					<textarea>Informe detalhes do equipamento...</textarea>
+				</fieldset>
+			</form>
+			<button>Cadastrar equipamento</button>
+			<button>Limpar formulário</button>
+			
+		</section>
+		<hr/>
+		<section>
+			<h2>3. Painel de indicadores<h2>
+			<h3>Valor de referência</h3>
+			<p>Valor unitário de referência de um notebook cadastrado no inventário:
+			<p>R$ 3.000,00</p>
+			<h3>Ocupação do armazenamento</h3>
+			<p>Espaço utilizado: 680 GB de uma capacidade total de 1.000 GB.
+			<label for="disco"></label><br/ >
+			<meter id="disco" value="0.68" min="0" max="1" low="0.6" high="0.6" high="0.8" optium="0.2">60%</meter>
+			<p>68% do armazenamento utilizado.</p>
+			<h3>Manutenção preventiva</h3>
+			<p>Andamento da manutenção dos equipamentos do laboratório de informática:
+			<label for="tarefa"></label><br/ >
+			<progress id="tarefa" value="70" max="100">70%</progress>
+			<p>70% concluído - 30%restante.
+		</section>
+		<hr/>
+			<p> Portal de Gestão de Hardware - Departamento de TI.</p>
+			<p>Dados fictícios para fins educacionais.</p>
+			
+			
+				

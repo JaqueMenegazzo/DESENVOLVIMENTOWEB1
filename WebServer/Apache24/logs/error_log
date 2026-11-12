@@ -6,3 +6,11 @@ mpm_winnt:notice] [pid 12596:tid 448] AH00455: Apache/2.4.70 (Win64) configured 
 [Mon Nov 09 19:36:41.531150 2026] [mpm_winnt:notice] [pid 12596:tid 448] AH00418: Parent: Created child process 15228
 [Mon Nov 09 19:36:41.955150 2026] [mpm_winnt:notice] [pid 15228:tid 468] AH00354: Child: Starting 64 worker threads.
 [Mon Nov 09 19:51:24.804513 2026] [core:error] [pid 15228:tid 1068] (20024)The given path is misformatted or contained invalid characters: [client ::1:64928] AH00127: Cannot map GET /ATV05/... HTTP/1.1 to file, referer: http://localhost/ATV05/
+Starting the 'Apache24' service
+The 'Apache24' service is running.
+core:warn] [pid 15732:tid 468] AH00098: pid file C:/WebServer/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Nov 11 19:50:36.382587 2026] [mpm_winnt:notice] [pid 15732:tid 468] AH00455: Apache/2.4.70 (Win64) configured -- resuming normal operations
+[Wed Nov 11 19:50:36.382587 2026] [mpm_winnt:notice] [pid 15732:tid 468] AH00456: Apache Lounge VS18 Server built: Nov  5 2026 09:10:53
+[Wed Nov 11 19:50:36.382587 2026] [core:notice] [pid 15732:tid 468] AH00094: Command line: 'c:\\WebServer\\Apache24\\bin\\httpd.exe -d C:/WebServer/Apache24'
+[Wed Nov 11 19:50:36.387588 2026] [mpm_winnt:notice] [pid 15732:tid 468] AH00418: Parent: Created child process 2636
+[Wed Nov 11 19:50:36.568606 2026] [mpm_winnt:notice] [pid 2636:tid 496] AH00354: Child: Starting 64 worker threads.

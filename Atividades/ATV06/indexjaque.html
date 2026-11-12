@@ -89,19 +89,35 @@
 					<input type="text" placeholder="Digite o nome" /><br />
 					<label>Data de aquisição:</label>
 					<input type="date" placeholder="Digite o nome" /><br />
+					<label>Categoria:</label>
 					<select id="categoria">
-					<legend>Categoria</legend>
 						<option>Selecione uma categoria</option>
+						<option>cat 01</option>
+						<option>cat 02</option>
+						<option>cat 03</option>
+						<option>cat 04</option>
+						<option>cat 05</option>
 					</select>
 				</fieldset>
 				<fieldset>
 					<legend>Responsável e condições</legend>
 					<label>E-mail do responsável:</label>
 					<input type="text" placeholder="nome@empresa.com" /><br />
-					<label>Quantidade</label>
-					<input type="text" placeholder="Digite o nome" /><br />
-					<label>Valor unitário:</label>
-					<input type="date" placeholder="Digite o nome" />
+					<label for="quantidade">Quantidade:</label>
+					<input type="number" id="quantidade" name="quantidade" value="1" min="1" max="100" step="1"><br />
+					<label for="valor-unitario">Valor Unitário (R$):</label>
+					<input
+						type="number"
+						id="valo-unitario"
+						name="valor_unitario"
+						min="0"
+						step="0.01"
+						value="0.00"
+					><br />
+					<select id="estado-de-conservacao">
+					<legend>Estado de Conservação</legend>
+						<option>Selecione o estado</option>
+					</select>
 				</fieldset>
 			</form>
 			<button>Cadastrar equipamento</button>
@@ -124,5 +140,6 @@
 		<hr/>
 			<p> Portal de Gestão de Hardware - Departamento de TI.</p>
 			<p>Dados fictícios para fins educacionais.</p>
+			<P>JAQUE<P>
 			
 				
