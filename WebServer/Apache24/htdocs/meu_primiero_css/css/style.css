@@ -1,0 +1,15 @@
+p
+{
+    color:blueviolet;
+    font-size: 35px;
+    background-color:aquamarine;
+}
+.retangulo
+{
+    width: 150px;
+    height: 500px;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+}
