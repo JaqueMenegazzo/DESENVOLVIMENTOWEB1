@@ -1,0 +1,11 @@
+button
+{
+    background-color: #ccc;
+    border-radius: 15px;
+    border-style: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+button:hover{background-color: aquamarine;}
